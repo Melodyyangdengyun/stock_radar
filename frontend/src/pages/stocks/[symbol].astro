@@ -1,7 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import KLineChart from "../../../components/KLineChart.svelte";
-import StockInfo from "../../../components/StockInfo.svelte";
+import KLineChart from "../../components/KLineChart.svelte";
+import StockInfo from "../../components/StockInfo.svelte";
+
+export const prerender = false;
 
 const { symbol } = Astro.params;
 ---
