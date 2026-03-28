@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "skills": {
+    "aakshare": {
+      "name": "AKShare",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=aakshare",
+      "source": "skillhub",
+      "version": "1.0.3"
+    },
+    "akshare-stock": {
+      "name": "A股量化 AkShare",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=akshare-stock",
+      "source": "skillhub",
+      "version": "1.0.1"
+    },
+    "akshare-finance": {
+      "name": "Akshare Finance",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=akshare-finance",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "akshare-cn-market": {
+      "name": "AKShare CN Market",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=akshare-cn-market",
+      "source": "skillhub",
+      "version": "1.2.0"
+    },
+    "akshare-api": {
+      "name": "A股/港股/美股数据查询",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=akshare-api",
+      "source": "skillhub",
+      "version": "1.0.1"
+    },
+    "akshare-wrapper": {
+      "name": "A股分析技能包装器",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=akshare-wrapper",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "macro-analyst": {
+      "name": "Macro Analyst",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=macro-analyst",
+      "source": "skillhub",
+      "version": "1.0.0"
+    },
+    "github": {
+      "name": "Github",
+      "zip_url": "https://lightmake.site/api/v1/download?slug=github",
+      "source": "skillhub",
+      "version": "1.0.0"
+    }
+  }
+}
