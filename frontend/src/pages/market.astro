@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LimitTable from "../components/LimitTable.svelte";
+---
+
+<Layout title="涨跌停池">
+  <div class="space-y-8">
+    <h1 class="text-2xl font-bold">涨跌停池</h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="card">
+        <h2 class="text-lg font-semibold mb-4 text-red-400">涨停板</h2>
+        <LimitTable client:load type="limit-up" />
+      </div>
+      <div class="card">
+        <h2 class="text-lg font-semibold mb-4 text-green-400">跌停板</h2>
+        <LimitTable client:load type="limit-down" />
+      </div>
+    </div>
+  </div>
+</Layout>

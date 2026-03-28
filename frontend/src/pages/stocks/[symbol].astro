@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import KLineChart from "../../../components/KLineChart.svelte";
+import StockInfo from "../../../components/StockInfo.svelte";
+
+const { symbol } = Astro.params;
+---
+
+<Layout title={`${symbol} 详情`}>
+  <div class="space-y-6">
+    <StockInfo client:load symbol={symbol!} />
+    <div class="card">
+      <h2 class="text-lg font-semibold mb-4">K线图</h2>
+      <KLineChart client:load symbol={symbol!} />
+    </div>
+  </div>
+</Layout>

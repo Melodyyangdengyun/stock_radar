@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import StatsCard from "../components/StatsCard.svelte";
+import HeatMap from "../components/HeatMap.svelte";
+import FundFlow from "../components/FundFlow.svelte";
+import StockSearch from "../components/StockSearch.svelte";
+---
+
+<Layout title="首页">
+  <div class="space-y-6">
+    <div class="flex items-center justify-between">
+      <h1 class="text-2xl font-bold">市场概览</h1>
+      <StockSearch client:load />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <StatsCard client:load title="涨停数" type="limit-up" />
+      <StatsCard client:load title="跌停数" type="limit-down" />
+      <StatsCard client:load title="上涨板块" type="sector-up" />
+      <StatsCard client:load title="下跌板块" type="sector-down" />
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="card">
+        <h2 class="text-lg font-semibold mb-4">板块热力图</h2>
+        <HeatMap client:load />
+      </div>
+      <div class="card">
+        <h2 class="text-lg font-semibold mb-4">资金流向</h2>
+        <FundFlow client:load />
+      </div>
+    </div>
+  </div>
+</Layout>

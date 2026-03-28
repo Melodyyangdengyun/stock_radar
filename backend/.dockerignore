@@ -1,0 +1,5 @@
+__pycache__
+*.pyc
+.ruff_cache
+.env
+radar_data/*.log
